@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>Universe</title>
+    </head>
+    <body style="background-color: rgb(14, 81, 237);">
+        <center>
+            <section id="Sec1">
+                <h1 style="color: white;">Documentry on Universe</h1>
+                <iframe style="background-color: white;width: 850px; height: 1000px;" src="https://docs.google.com/document/d/e/2PACX-1vSnM6fZfjVcE9COfVq7LoyxOBlwwq-KOMTHH_YV3t5o8CebT1MR5WwneDCjDFymwA/pub?embedded=true">
+                </iframe>
+            </section>
+            <button id="bnt1" style="background-color: aqua; border-radius: 20px; width: 55px;" onclick="share()">Share⬇</button>
+            <br>
+            <p id="message" style="color: azure;"></p>
+        </center>
+    </body>
+    <script>
+    var link = [
+        "https://docs.google.com/document/d/1N8Z7IjlfESuXYl_DrYrEmcp2yEShR3BS/edit?usp=sharing&ouid=101649739137671882686&rtpof=true&sd=true"
+        
+    ]
+    var i = 0;
+      function share() {  
+      document.getElementById("message").innerHTML = link[i];
+      i++;
+    }
+    </script>
+</HTML>
